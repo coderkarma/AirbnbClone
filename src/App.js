@@ -1,20 +1,23 @@
 import React from 'react';
+import Header from './Header'
+import Home from './Home';
 
 import './App.css';
 
 const App = () => {
 	return (
 		<div className='App'>
-			<h1>Airbnb Clone</h1>
-			{/* Home */}
-        {/* Header */}
-            {/* Search */}
-        {/* Banner */}
-        {/* Cards */}
-        {/* Footer */}
+			<Header />
+			<Home />
+      {/* Home */}
+			{/* Header */}
+			{/* Search */}
+			{/* Banner */}
+			{/* Cards */}
+			{/* Footer */}
 
 			{/* Search Page  */}
-       
+         {/* Header  */}
 		</div>
 	);
 };
