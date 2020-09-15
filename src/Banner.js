@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 import './Banner.css';
 
 const Banner = () => {
-	const [showSearch, setShowSearch] = useState(true);
+	const [showSearch, setShowSearch] = useState(false);
 	return (
 		<div className='banner'>
 			<div className='banner__search'>
@@ -13,7 +13,7 @@ const Banner = () => {
 					onClick={() => setShowSearch(!showSearch)}
 					className='banner__searchButton'
 					variant='outlined'>
-					Search Dates
+					{showSearch ? 'Hide' : 'Search Dates'}
 				</Button>
 			</div>
 			<div className='banner__info'>
