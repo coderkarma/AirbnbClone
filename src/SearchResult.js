@@ -1,5 +1,6 @@
 import React from 'react';
 import StarIcon from '@material-ui/icons/Star';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import './SearchResult.css';
 
 const SearchResult = ({
@@ -15,7 +16,7 @@ const SearchResult = ({
 		<div className='searchResult'>
 			<img src={img} alt='' />
 
-			<StarIcon className='searchResult__heart' />
+			<FavoriteIcon className='searchResult__heart' />
 			<div className='searchResult__info'>
 				<div className='searchResult__infoTop'>
 					<p>{location}</p>
@@ -24,10 +25,15 @@ const SearchResult = ({
 					<p>{description}</p>
 				</div>
 				<div className='searchResult__infoBottom'>
-					<div className='searchResult__starts'>
+					<div className='searchResult__stars'>
+						<StarIcon className='searchResult__star' />
 						<p>
 							<strong>{star}</strong>
 						</p>
+					</div>
+					<div className='searchResults__price'>
+						<h2>{price}</h2>
+						<p>{total}</p>
 					</div>
 				</div>
 			</div>
